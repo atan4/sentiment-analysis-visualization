@@ -1,0 +1,25 @@
+<body>
+<h1>Sentiment Analysis Visualization</h1>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="./d3.min.js"></script>
+<script type="text/javascript" src="./d3Circle.js"></script>
+
+<script> 
+    var savData = {{{json d3data}}};
+
+	//Extracts data from json and then draws the circles
+	for (var key in savData) {
+	  if (savData.hasOwnProperty(key)) {
+	  	//regex takes out underscores and quotations
+	  	var idKey = key.replace(/\s/g, "_").replace(/['"]+/g, '');
+	    var val = savData[key];
+	    console.log(val);
+	    drawCircle(50, val.frequency, val.positive, val.negative, idKey);
+	  }
+	};
+</script>
