@@ -9,5 +9,8 @@ Building on ideas from John Coogan's Using Machine Learning to Visualize Custome
 	"promise": "8.0.1"
 }
 
-Test with Game of Thrones Season 7 review:
+Test with Game of Thrones Season 7 review: https://www.theatlantic.com/entertainment/archive/2017/08/game-of-thrones-season-7-episode-6-beyond-the-wall-roundtable/537363/
+
 ![alt text](https://raw.githubusercontent.com/atan4/sentiment-analysis-visualization/master/imgs/v1.jpg)
+
+This project creates circles that are sized based on their frequency of word entity and colored by the ratio of positive and negative sentiment per sentence. Neutral entities were not included.
