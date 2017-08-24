@@ -1,6 +1,6 @@
 //node array necessary for force-directed collision detection.
 var nodeArray = [];
-
+ 
 	var viewportWidth, width = $(window).width();
 	var viewportHeight, height = $(window).height();
 
@@ -88,10 +88,3 @@ var simulation = d3.forceSimulation(nodeArray)
 //Add click to remove, etc. features
 //-----------------------------------------------------------------------------------
 
-
-// early testing
-// console.log("NODE LENGTH IS: " + nodeArray.length);
-// drawCircle(100, 3, 1, 2, "camera");
-// drawCircle(50, 2, 1, 1, "lumen");
-// drawCircle(50, 5, 4, 1, "l16");
-// drawCircle(50, 2, 2, 0, "auto");
